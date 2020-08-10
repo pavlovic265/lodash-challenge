@@ -20,4 +20,9 @@ describe("Array chunk", () => {
 
     expect(result).toEqual([["a", "b", "c"], ["d"]]);
   });
+  it("should split array in item of 3 and 1 chunks", () => {
+    const result = chunk(["a", 1, "c", 2], 3);
+
+    expect(result).toEqual([["a", 1, "c"], [2]]);
+  });
 });

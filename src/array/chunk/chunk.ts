@@ -1,10 +1,9 @@
 // https://lodash.com/docs/4.17.15#chunk
 
-type ChunkReturnType = any[];
+// const arrayStart = array.splice(0, size);
+// return [arrayStart, array];
 
-export function chunk(array: any[], size = 1): ChunkReturnType {
-  // const arrayStart = array.splice(0, size);
-  // return [arrayStart, array];
+export function chunk<T>(array: T[], size = 1): Array<T[]> {
   const returnArray = [[]];
   let returnArrayIndex = 0;
   let count = 0;
