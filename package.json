@@ -23,7 +23,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "check": "ts-node",
+    "dev": "ts-node",
     "test": "jest",
     "test:w": "jest --watch",
     "lint": "eslint . --ext .ts,.tsx"

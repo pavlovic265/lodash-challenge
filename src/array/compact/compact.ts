@@ -1,4 +1,4 @@
-// https://lodash.com/docs/4.17.15#chunk
+// https://lodash.com/docs/4.17.15#compact
 
 /**
  * _.compact(array)
@@ -26,7 +26,7 @@ function isTruthyValue(value: FalseyType): boolean {
 
   return true;
 }
-export function compact<T extends FalseyType>(array: T[]): Array<T[]> {
+export function compact<T extends FalseyType>(array: T[]): Array<T> {
   const returnArray = [];
   for (let i = 0; i < array.length; i += 1) {
     const element = array[i];
